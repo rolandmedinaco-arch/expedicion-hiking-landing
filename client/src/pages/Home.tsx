@@ -603,19 +603,15 @@ export default function Home() {
 
             {/* Checkbox */}
             <div className="flex items-start gap-3">
-              {/* Checkbox */}
-<div className="flex items-start gap-3">
-  <input 
-    type="checkbox" 
-    id="health"
-    checked={healthConfirmed}
-    onChange={(e) => setHealthConfirmed(e.target.checked)}
-    className="mt-1 w-5 h-5 shrink-0 cursor-pointer accent-white border-2 border-white bg-black rounded-sm"
-  />
-  <Label htmlFor="health" className="text-sm text-gray-400 cursor-pointer">
-    Confirmo que me encuentro en óptimas condiciones de salud para participar en esta actividad física de intensidad moderada a alta.
-  </Label>
-</div>
+              <Checkbox
+                id="health"
+                checked={healthConfirmed}
+                onCheckedChange={(checked) => setHealthConfirmed(checked as boolean)}
+              />
+              <Label htmlFor="health" className="text-sm text-gray-400 cursor-pointer">
+                Confirmo que me encuentro en óptimas condiciones de salud para participar en esta actividad física de intensidad moderada a alta.
+              </Label>
+            </div>
 
             {/* Submit Button */}
             <button
