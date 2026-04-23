@@ -41,16 +41,41 @@ export default function Home() {
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    if (!healthConfirmed) {
-      alert("Por favor confirma que estás en óptimas condiciones de salud.");
-      return;
+  const handleSubmit = async (e: React.FormEvent) => {
+  e.preventDefault();
+
+  // 1. Tu validación original de salud
+  if (!healthConfirmed) {
+    alert("Por favor confirma que estás en óptimas condiciones de salud.");
+    return;
+  }
+
+  // 2. Preparamos los datos para Netlify
+  const data = new URLSearchParams({
+    "form-name": "registro-expedicion",
+    ...formData,
+    "salud-confirmada": healthConfirmed ? "Sí" : "No"
+  }).toString();
+
+  try {
+    // 3. Enviamos los datos a Netlify por debajo de la mesa
+    const response = await fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: data,
+    });
+
+    if (response.ok) {
+      console.log("¡Formulario enviado con éxito a Netlify!");
+      // 4. Activamos tu ventana de confirmación visual original
+      setShowConfirmation(true); 
+    } else {
+      alert("Hubo un error al enviar el registro. Por favor, intenta de nuevo.");
     }
-    console.log("Formulario enviado:", formData);
-    setShowConfirmation(true);
-    // Aquí iría la lógica de envío del formulario a un backend
-  };
+  } catch (error) {
+    alert("Error de conexión. Revisa tu internet.");
+  }
+};
 
   const handleCloseConfirmation = () => {
     setShowConfirmation(false);
