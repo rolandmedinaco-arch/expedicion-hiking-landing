@@ -365,7 +365,7 @@ export default function Home() {
             {/* Establos */}
             <div className="group cursor-pointer">
               <div
-                className="relative h-64 md:h-72 rounded-lg overflow-hidden mb-4 border-2 border-[#333333] group-hover:border-[#CCFF00] transition-colors bg-[#1a1a1a]"
+                className="relative h-64 md:h-80 rounded-lg overflow-hidden mb-4 border-2 border-[#333333] group-hover:border-[#CCFF00] transition-colors bg-[#1a1a1a]"
                          style={{
                   backgroundImage: `url('https://i.postimg.cc/XqXd1CgB/descarga-(4).jpg')`,
                   backgroundSize: "cover",
@@ -374,7 +374,7 @@ export default function Home() {
               >
                 <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent" />
                 <div className="absolute bottom-4 left-4">
-                  <HomeIcon size={48} className="text-[#CCFF00]" />
+                  <HomeIcon size={32} className="text-[#CCFF00]" />
                 </div>
               </div>
               <h3 className="text-lg font-black" style={{ fontFamily: "Montserrat" }}>
