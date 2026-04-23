@@ -539,8 +539,8 @@ export default function Home() {
             </p>
           </div>
 
-          <form onSubmit={handleSubmit} className="bg-[#121212] p-8 border-2 border-[#CCFF00] rounded-lg space-y-6 hover:shadow-lg transition-all" style={{ boxShadow: '0 0 20px #CCFF00, inset 0 0 10px #CCFF00' }}>
-            {/* Nombre */}
+         <form name="registro-expedicion" method="POST" data-netlify="true" onSubmit={handleSubmit} className="bg-[#121212] p-8 border-2 border-[#CCFF00] ...">
+         <input type="hidden" name="form-name" value="registro-expedicion" />
             <div>
               <Label htmlFor="nombre" className="text-white font-semibold mb-2 block">
                 Nombre Completo *
