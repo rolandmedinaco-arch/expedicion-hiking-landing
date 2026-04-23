@@ -91,7 +91,7 @@ export default function Home() {
           {/* Logo */}
           <div className="flex items-center gap-2">
             <div className="text-2xl font-black" style={{ fontFamily: "Montserrat" }}>
-              <span className="text-[#CCFF00]">EXPEDICIÓN</span>
+              <span className="text-[#CCFF00]">METAMORFOSIS</span>
             </div>
           </div>
 
@@ -134,7 +134,7 @@ export default function Home() {
         {mobileMenuOpen && (
           <nav className="md:hidden bg-black border-t border-[#333333] p-4 space-y-4">
             <a href="#experiencia" className="block text-sm font-semibold hover:text-[#CCFF00]">
-              EXPERIENCIA
+              METAMORFOSIS
             </a>
             <a href="#viaje" className="block text-sm font-semibold hover:text-[#CCFF00]">
               VIAJE
@@ -173,7 +173,7 @@ export default function Home() {
             {/* Eyebrow */}
             <div className="mb-6 inline-block">
               <span className="text-[#CCFF00] text-xs font-black tracking-widest" style={{ fontFamily: "Montserrat" }}>
-                EXPEDICIÓN PRESENTA
+                METAMORFOSIS PRESENTA
               </span>
             </div>
 
@@ -189,7 +189,7 @@ export default function Home() {
 
             {/* Subheadline */}
             <p className="text-lg md:text-xl text-gray-300 mb-8 max-w-xl leading-relaxed">
-              Desconecta. Reconecta. Una experiencia de senderismo de élite en Fusagasugá que transforma tu cuerpo, mente y espíritu.
+              Desconectate para Reconectar. Una experiencia de senderismo de élite en Fusagasugá que transforma tu cuerpo, mente y espíritu.
             </p>
 
             {/* Event Details */}
@@ -485,7 +485,7 @@ export default function Home() {
                     <h3 className="font-black text-lg" style={{ fontFamily: "Montserrat" }}>
                       Chicken Wrap Premium
                     </h3>
-                    <p className="text-gray-400 text-sm">Pollo a la parrilla, vegetales frescos y salsa casera en pan integral.</p>
+                    <p className="text-gray-400 text-sm">Pollo a la parrilla, vegetales frescos y salsa casera en tortilla.</p>
                   </div>
                 </div>
 
@@ -603,15 +603,19 @@ export default function Home() {
 
             {/* Checkbox */}
             <div className="flex items-start gap-3">
-              <Checkbox
-                id="health"
-                checked={healthConfirmed}
-                onCheckedChange={(checked) => setHealthConfirmed(checked as boolean)}
-              />
-              <Label htmlFor="health" className="text-sm text-gray-400 cursor-pointer">
-                Confirmo que me encuentro en óptimas condiciones de salud para participar en esta actividad física de intensidad moderada a alta.
-              </Label>
-            </div>
+              {/* Checkbox */}
+<div className="flex items-start gap-3">
+  <input 
+    type="checkbox" 
+    id="health"
+    checked={healthConfirmed}
+    onChange={(e) => setHealthConfirmed(e.target.checked)}
+    className="mt-1 w-5 h-5 shrink-0 cursor-pointer accent-white border-2 border-white bg-black rounded-sm"
+  />
+  <Label htmlFor="health" className="text-sm text-gray-400 cursor-pointer">
+    Confirmo que me encuentro en óptimas condiciones de salud para participar en esta actividad física de intensidad moderada a alta.
+  </Label>
+</div>
 
             {/* Submit Button */}
             <button
@@ -642,7 +646,7 @@ export default function Home() {
               </div>
             </div>
 
-            <h2 className="text-3xl font-black mb-4" style={{ fontFamily: "Montserrat", color: "#CCFF00", textShadow: "0 0 10px #CCFF00" }}>
+            <h2 className="text-3xl font-black mb-4" style={{ fontFamily: "Montserrat", color: "rgb(204, 255, 0)", textShadow: "0 0 10px #CCFF00" }}>
               ¡CUPO CONFIRMADO!
             </h2>
 
@@ -661,7 +665,7 @@ export default function Home() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block bg-[#25D366] text-black font-black px-8 py-3 rounded mb-4 hover:scale-105 transition-transform duration-300"
-                style={{ boxShadow: '0 0 15px rgba(37, 211, 102, 0.6)' }}
+                style={{ boxShadow: '0 0 15px rgb(204, 255, 0)' }}
               >
                 📱 UNIRME AL CANAL DE WHATSAPP
               </a>

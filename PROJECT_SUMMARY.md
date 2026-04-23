@@ -19,7 +19,7 @@ Landing page de alta conversión para un evento de senderismo de élite en Fusag
 
 ### 1. **Header Responsivo**
 - Navegación fija con menú móvil
-- Logo "EXPEDICIÓN" en verde neón
+- Logo "METAMORFOSIS" en verde neón
 - Botón CTA "RESERVAR CUPO" destacado
 - Enlaces a: Experiencia, Viaje, Bienestar, Nutrición, Registro
 
