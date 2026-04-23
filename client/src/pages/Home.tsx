@@ -89,11 +89,13 @@ export default function Home() {
       <header className="fixed top-0 w-full bg-black/95 backdrop-blur-sm z-50 border-b border-[#333333]">
         <div className="container flex items-center justify-between py-4">
           {/* Logo */}
-          <div className="flex items-center gap-2">
-            <div className="text-2xl font-black" style={{ fontFamily: "Montserrat" }}>
-              <span className="text-[#CCFF00]">METAMORFOSIS</span>
-            </div>
-          </div>
+         <div className="flex items-center gap-2">
+  <img 
+    src="https://i.postimg.cc/x8CjKG3B/Logometa.png" 
+    alt="Logo" 
+    className="h-10 md:h-12 w-auto object-contain"
+  />
+</div>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-8">
@@ -213,7 +215,7 @@ export default function Home() {
               <a href="#registro" className="neon-button text-center font-black text-lg hover:scale-110 transition-transform duration-300" style={{ boxShadow: '0 0 20px #CCFF00, 0 0 40px #CCFF00' }}>
                 RESERVAR CUPO ($74.900)
               </a>
-              <a href="#viaje" className="neon-button-outline text-center font-black text-lg hover:scale-110 transition-transform duration-300" style={{ boxShadow: '0 0 15px #CCFF00, inset 0 0 5px #CCFF00' }}>
+              <a href="#viaje" className="neon-button-outline text-center font-black text-lg hover:scale-110 transition-transform duration-300" style={{ boxShadow: '0 0 15px #ffff, inset 0 0 5px #fffff' }}>
                 CONOCER MÁS
               </a>
             </div>
@@ -370,7 +372,8 @@ export default function Home() {
                   backgroundPosition: "center",
                 }}
               >
-                <div className="flex items-center justify-center h-full">
+                <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent" />
+                <div className="absolute bottom-4 left-4">
                   <HomeIcon size={48} className="text-[#CCFF00]" />
                 </div>
               </div>
