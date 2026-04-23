@@ -12,13 +12,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
   </head>
 
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-    <script
-      defer
-      src="%VITE_ANALYTICS_ENDPOINT%/umami"
-      data-website-id="%VITE_ANALYTICS_WEBSITE_ID%"></script>
-  </body>
+ <body>
+  <form name="registro-expedicion" netlify netlify-honeypot="bot-field" hidden>
+    <input type="text" name="nombre" />
+    <input type="text" name="whatsapp" />
+    <input type="checkbox" name="salud-confirmada" />
+  </form>
 
+  <div id="root"></div>
+
+  <script type="module" src="/src/main.tsx"></script>
+</body>
 </html>
