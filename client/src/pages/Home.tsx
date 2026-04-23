@@ -364,6 +364,11 @@ export default function Home() {
             <div className="group cursor-pointer">
               <div
                 className="relative h-64 md:h-72 rounded-lg overflow-hidden mb-4 border-2 border-[#333333] group-hover:border-[#CCFF00] transition-colors bg-[#1a1a1a]"
+                         style={{
+                  backgroundImage: `url('https://i.postimg.cc/XqXd1CgB/descarga-(4).jpg')`,
+                  backgroundSize: "cover",
+                  backgroundPosition: "center",
+                }}
               >
                 <div className="flex items-center justify-center h-full">
                   <HomeIcon size={48} className="text-[#CCFF00]" />
@@ -660,20 +665,14 @@ export default function Home() {
                 href="https://whatsapp.com/channel/0029Vb7If0C2ZjCmvpL18Z2h"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block bg-[#25D366] text-black font-black px-8 py-3 rounded mb-4 hover:scale-105 transition-transform duration-300"
-                style={{ boxShadow: '0 0 15px rgb(204, 255, 0)' }}
+                className="inline-block bg-[#ccff00] text-black font-black px-8 py-3 rounded mb-4 hover:scale-105 transition-transform duration-300"
+                style={{ boxShadow: '0 0 15px #ccff00' }}
               >
                 📱 UNIRME AL CANAL DE WHATSAPP
               </a>
             </div>
 
-            <button
-              onClick={handleCloseConfirmation}
-              className="w-full bg-white text-black font-black py-3 rounded hover:scale-105 transition-transform duration-300"
-              style={{ boxShadow: '0 0 15px rgba(255, 255, 255, 0.6)' }}
-            >
-              CERRAR
-            </button>
+          
           </div>
         </div>
       )}
@@ -691,20 +690,11 @@ export default function Home() {
               </p>
             </div>
 
-            <div>
-              <h4 className="font-black text-sm mb-4">NAVEGACIÓN</h4>
-              <ul className="space-y-2 text-sm text-gray-400">
-                <li><a href="#experiencia" className="hover:text-[#CCFF00]">Experiencia</a></li>
-                <li><a href="#viaje" className="hover:text-[#CCFF00]">El Viaje</a></li>
-                <li><a href="#bienestar" className="hover:text-[#CCFF00]">Bienestar</a></li>
-              </ul>
-            </div>
 
             <div>
               <h4 className="font-black text-sm mb-4">CONTACTO</h4>
               <ul className="space-y-2 text-sm text-gray-400">
-                <li>Email: info@expedicion.com</li>
-                <li>WhatsApp: +57 300 123 4567</li>
+                <li>WhatsApp: +57 3142585702</li>
                 <li>Fusagasugá, Colombia</li>
               </ul>
             </div>
@@ -712,15 +702,14 @@ export default function Home() {
             <div>
               <h4 className="font-black text-sm mb-4">SÍGUENOS</h4>
               <ul className="space-y-2 text-sm text-gray-400">
-                <li><a href="#" className="hover:text-[#CCFF00]">Instagram</a></li>
-                <li><a href="#" className="hover:text-[#CCFF00]">Facebook</a></li>
-                <li><a href="#" className="hover:text-[#CCFF00]">TikTok</a></li>
+             <li><a href="https://www.instagram.com/metamorfosis.fusa" target="_blank" rel="noopener noreferrer" className="hover:text-[#CCFF00]">Instagram</a></li>
+
               </ul>
             </div>
           </div>
 
           <div className="border-t border-[#333333] pt-8 text-center text-sm text-gray-500">
-            <p>&copy; 2026 Expedición: Árbol de las Ventanas. Todos los derechos reservados.</p>
+            <p>&copy; 2026 METAMORFOSIS (MAYCOL VARGAS): Árbol de las Ventanas. Todos los derechos reservados.</p>
           </div>
         </div>
       </footer>
