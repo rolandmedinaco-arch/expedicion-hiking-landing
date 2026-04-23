@@ -564,8 +564,8 @@ export default function Home() {
             </p>
           </div>
 
-         <form name="registro-expedicion" method="POST" data-netlify="true" onSubmit={handleSubmit} className="bg-[#121212] p-8 border-2 border-[#CCFF00] ...">
-         <input type="hidden" name="form-name" value="registro-expedicion" />
+        <form name="registro-expedicion" method="POST" data-netlify="true" onSubmit={handleSubmit} className="bg-[#121212] p-8 border-2 border-[#CCFF00] rounded-2xl flex flex-col gap-6">
+  <input type="hidden" name="form-name" value="registro-expedicion" />
             <div>
               <Label htmlFor="nombre" className="text-white font-semibold mb-2 block">
                 Nombre Completo *
